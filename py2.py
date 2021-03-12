@@ -45,9 +45,5 @@ print("\n\nGROCERY LIST is: \n")
 table_head = ["product name","quantity","price"]
 print("{: >20} {: >20} {: >20}\n".format(*table_head))
 for i in cart:
-    data = [i,cart[i][0],cart[i][1]]
+    data = [i,str(cart[i][0])+" kg",cart[i][1]]
     print("{: >20} {: >20} {: >20}".format(*data))
-
-
-
-        
